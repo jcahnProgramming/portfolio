@@ -1,0 +1,55 @@
+.container {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background);
+    color: var(--text-color);
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  .box {
+    background-color: var(--card-bg);
+    padding: 3rem 2rem;
+    border-radius: 16px;
+    box-shadow:
+      0 12px 24px rgba(0, 0, 0, 0.15),
+      0 0 12px var(--glow-color);
+    max-width: 500px;
+  }
+  
+  .mascot {
+    width: 120px;
+    height: auto;
+    margin: 0 auto 1rem;
+    display: block;
+  }
+  
+  h1 {
+    font-size: 5rem;
+    color: var(--accent);
+    margin: 0;
+  }
+  
+  p {
+    margin: 1rem 0 2rem;
+    font-size: 1.25rem;
+    color: var(--text-color);
+  }
+  
+  .button {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    border-radius: 8px;
+    background-color: var(--accent);
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background-color 0.3s ease;
+  }
+  
+  .button:hover {
+    background-color: var(--accent-dark);
+  }
+  

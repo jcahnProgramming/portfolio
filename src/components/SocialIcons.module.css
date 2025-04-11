@@ -1,0 +1,64 @@
+.container {
+    text-align: center;
+    padding: 3rem 1rem;
+  }
+  
+  .title {
+    font-size: 1.75rem;
+    margin-bottom: 1.5rem;
+    color: var(--accent);
+  }
+  
+  .card {
+    background-color: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 16px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .card:hover {
+    box-shadow:
+      0 12px 30px rgba(0, 0, 0, 0.15),
+      0 0 8px var(--glow-color),
+      0 0 16px var(--glow-color);
+  }
+  
+  .iconGrid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; /* 🔐 Prevent wrapping to a second row */
+    gap: 1.5rem;
+    overflow-x: auto; /* ✅ Optional: Allow scroll if screen is too narrow */
+    padding-bottom: 0.5rem;
+  }
+  
+  
+  .iconWrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    text-decoration: none;
+    transition: transform 0.2s ease;
+  }
+  
+  .iconWrapper:hover {
+    transform: scale(1.15);
+    color: var(--accent);
+  }
+  
+  .icon {
+    font-size: 28px;
+  }
+  
+  .label {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+  }
+  

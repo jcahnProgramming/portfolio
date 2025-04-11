@@ -1,0 +1,78 @@
+:root {
+  --bg-color: #f2f2f5;
+  --text-color: #1f1f22;
+  --card-bg: #f9f9fb;
+  --card-hover-bg: #ececf0;
+  --accent: #6366f1;
+  --accent-dark: #4f46e5;
+  --glow-color: rgba(99, 102, 241, 0.2);
+  --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  --transition-speed: 0.3s;
+}
+
+[data-theme='dark'] {
+  --bg-color: #3c3c40;
+  --text-color: #f0f0f5;
+  --card-bg: #4a4a50;
+  --card-hover-bg: #585861;
+  --accent: #a5b4fc;
+  --accent-dark: #818cf8;
+  --glow-color: rgba(129, 140, 248, 0.25);
+  --card-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
+
+/* RESET + BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  transition: background-color var(--transition-speed) ease;
+}
+
+body {
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  transition: background-color var(--transition-speed), color var(--transition-speed);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+button {
+  font-family: inherit;
+}
+
+/* TYPOGRAPHY */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--accent);
+  transition: color var(--transition-speed);
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+  transition: color var(--transition-speed);
+}
+
+/* UNIVERSAL CARD STYLES */
+.card,
+.projectCard {
+  background-color: var(--card-bg);
+  color: var(--text-color);
+  box-shadow: var(--card-shadow);
+  border-radius: 12px;
+  transition:
+    background-color var(--transition-speed),
+    color var(--transition-speed),
+    box-shadow var(--transition-speed),
+    border var(--transition-speed);
+}
